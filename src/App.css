@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style pour la ligne bleue sous les titres */
+.section-title-portfolio { 
+  border: none;
+  border-top: 3px solid #0d6efd; 
+  width: 350px; 
+  margin-top: 1rem;
+  opacity: 1;  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.section-title { 
+  border: none;
+  border-top: 3px solid #0d6efd; 
+  width: 500px; 
+  margin-top: 1rem;
+  opacity: 1;  
+}
+@media  screen and (max-width: 768px) {
+  .section-title {
+    width: 50%;  
+  }
+}
+@media  screen and (max-width: 480px) {
+  .section-title {
+    width: 60%;  
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Effet Card*/
+.services-card:hover , .portfolio-card:hover{
+  background-color: #efefef;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+
 }
 
-.App-link {
-  color: #61dafb;
+/*Effet navbar*/
+.navbar , .nav-link:hover{
+  text-decoration: underline !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*Effet footer*/
+.footer-icon i {
+  color: rgba(255, 255, 255, 0.5); 
+  transition: color 0.3s;          
+}
+
+.footer-icon i:hover {
+  color: white;                                       
+}
+
+.link-footer {
+  text-decoration: none;
+}
+
+.link-footer:hover {
+  color: white;      /* devient blanc au survol */
+  font-weight: 700;  /* devient gras au survol */
+}
+
+
+
+/*fond du modal*/
+.modal-back .modal-content {
+  background-color: #212529;
+  color : white;
 }
